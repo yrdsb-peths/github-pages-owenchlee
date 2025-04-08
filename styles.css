@@ -1,4 +1,3 @@
-/* styles.css */
 :root {
     --bg-color: white;
     --text-color: black;
@@ -17,13 +16,14 @@
 }
 
 body {
-    background-image: url('./assets/images/Backdrop.png'); /* Use your image path */
+    /* Use a relative path for the background image */
+    background-image: url('./assets/images/Backdrop.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* Optional: makes the background stay in place when scrolling */
-    
-    color: white;
+    background-attachment: fixed;
+
+    color: var(--text-color);
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 40px;
@@ -42,4 +42,4 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
